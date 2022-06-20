@@ -1,0 +1,19 @@
+{
+  "name": "mini-max-sum",
+  "version": "1.0.0",
+  "description": "HackerRank problems",
+  "main": "minMax.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nr1e/HackerRank.git"
+  },
+  "author": "Narek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nr1e/HackerRank/issues"
+  },
+  "homepage": "https://github.com/nr1e/HackerRank#readme"
+}
