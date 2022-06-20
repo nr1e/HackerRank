@@ -1,4 +1,4 @@
-var s = '14:45:11PM';
+var s = '12:45:54PM';
 
 function timeConversion(s){
     var time;
@@ -7,16 +7,28 @@ function timeConversion(s){
     var mm = s.charAt(3) + s.charAt(4);
     var ss = s.charAt(6) + s.charAt(7);
     if(n == 'A'){
+        if (hh == '12'){
+            hh = '00';
+        }
+
         time = hh + ':' + mm + ':' + ss;
     }
     else if(n == 'P') {
-        hh = hh - 12;
-        if(hh < 10){
-            hh = '0' + hh;
+        /*if(s.charAt(0) == '0' ){
+            hh = parseInt(hh);  
+        }*/ 
+        hh = parseInt(hh);
+        hh += 12;
+        if(hh == 24){
+        //   hh = parseInt(hh); 
+            hh -= 12;
         }
+  
         time = hh + ':' + mm + ':' + ss;    
     }
     console.log(time);
+    return time;
+    
 }
 
 timeConversion(s);
