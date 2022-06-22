@@ -2,7 +2,7 @@
   "name": "mini-max-sum",
   "version": "1.0.0",
   "description": "HackerRank problems",
-  "main": "minMax.js",
+  "main": "problem.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
